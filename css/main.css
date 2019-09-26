@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway|Ubuntu&display=swap');
+
+.title {
+    font-family: 'Raleway', sans-serif;
+}
+
+.unfinished {
+    content: "not finished";
+    position: fixed;
+    display: block;
+    top: 0;
+    left: 0;
+    background: red;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 10px;
+    z-index: 999999;
+}
+
+html,
+body {
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    box-sizing: border-box;
+}
+
+body .content {
+    height: 100%;
+}
+
+
+.home {
+    height: 100%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*#242582, #F64C72, */
+    background: linear-gradient(rgba(26, 26, 29, 0.96),
+            rgba(26, 26, 29, 0.96)), url('../img/bg.jpg');
+    background-repeat: repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.home p {
+    margin: 10px 0;
+    font-size: 4em;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+}
+
+.text {
+    font-size: 2em;
+}
+
+.letter {
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.navigation {
+    transition: 0.3s;
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+    background: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.navigation .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+
+.navigation .header h1 {
+    font-size: 1.8em;
+    margin: 0;
+}
+
+.navigation .header p {
+    margin: 0;
+    margin-top: 5px;
+}
+
+.menu {
+    display: flex;
+    height: 100%;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+    list-style-type: none;
+}
+
+.menu li a {
+    text-decoration: none;
+    padding: 5px;
+    color: black;
+    font-weight: bold;
+}
+
+.education {
+    background: #1A1A1D;
+    display: flex;
+}
+
+
+.education .courses {
+    flex: 0 25%;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.course {
+    width: 100%;
+    padding: 20px 0;
+    font-size: 1.5em;
+    text-align: center;
+    transition: 0.3s;
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+}
+
+.course:hover {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+.education .description {
+    flex: 0 75%;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.course-description {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+    display: none;
+}
+
+.course-description.selected {
+    display: flex;
+}
+
+.course-description .content {
+    flex: 0 50%;
+    padding: 5px;
+    font-size: 1.2em;
+    text-align: justify;
+}
+
+.course-description .achivement {
+    flex: 0 50%;
+}
+
+.achivement .certificate {
+    display: block;
+    max-width: 80%;
+    margin: 0 auto;
+    height: auto;
+}
+
+.center {
+    text-align: center;
+}
+
+
+.active {
+    position: relative;
+    transition: 0.4s;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+
+}
+
+.active:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 7%;
+    height: 100%;
+    background: #1A1A1D;
+    clip-path: polygon(100% 0, 0 50%, 100% 100%);
+    right: -1px;
+    top: 0;
+}
+
+.projects {
+    padding: 100px 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #1A1A1D;
+    color: white;
+    text-align: center;
+}
+
+.project {
+    flex: 0 33%;
+    background-color: #333;
+    padding: 10px;
+}
+
+.project-img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    background: url('../img/cpanel.png')
+}
+
+.project-title {
+    padding: 5px;
+    font-size: 1.3em;
+}
+
+.highlight {
+    font-size: 0.8em;
+    background-color: #0066ff;
+    padding: 4px;
+    border-radius: 10%;
+    -webkit-text-stroke: 0.20px;
+}
+
+.contacts {
+    background: #1A1A1D;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 50px 10px;
+}
+
+.contacts h2 {
+    font-size: 2.5em;
+}
+
+.links {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.medialink {
+    text-decoration: none;
+    color: grey;
+    transition: 0.2s;
+    font-size: 3em;
+    margin: 0 10px;
+}
+
+.medialink:hover {
+    color: white;
+}
+
+.contact {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 600px;
+}
+
+.contact input,
+.contact textarea {
+    width: 100%;
+    font-size: 1.2em;
+    padding: 8px;
+    border: none;
+    background: #333;
+    color: white;
+}
+
+
+::placeholder {
+    color: grey;
+}
+
+.row {
+    padding: 5px;
+    display: flex;
+}
+
+.row-1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.row-1 input {
+    width: 46.5%;
+}
+
+.submit {
+    cursor: pointer;
+    color: grey !important;
+    transition: 0.2s;
+}
+
+.submit:hover {
+    color: white !important;
+}
+
+footer {
+    background: black;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    color: #555;
+    font-size: 1.1em;
+    font-weight: 500;
+}

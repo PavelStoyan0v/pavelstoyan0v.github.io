@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/fbcc71ede6.js"></script>
+    <script type="text/javascript" src="http://livejs.com/live.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <section class="navigation">
+        <div class="header">
+            <h1>Pavel Stoyanov</h1>
+        </div>
+
+        <nav>
+            <ul class="menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contacts">Contacts</a></li>
+            </ul>
+        </nav>
+    </section>
+    <div class="content">
+        <section class="home" id="home">
+            <p class="text animate">Hi, I am Pavel</p>
+            <p>I <i style="color:red" class="fas fa-heart"></i> Web Development</p>
+        </section>
+        
+        <section class="education" id="education">
+            <div class="courses">
+                <div class="course active" id="0">Programming Basics</div>
+                <div class="course" id="1">Programming Fundamentals</div>
+                <div class="course" id="2">JavaScript Fundamentals</div>
+                <div class="course" id="3">JavaScript Advanced</div>
+                <div class="course" id="4">JavaScript Applications</div>
+                <div class="course" id="5">PHP Web Development Basics</div>
+                <div class="course" id="6">PHP MVC Frameworks</div>
+                <div class="course" id="7">MTA - Javascript</div>
+                <div class="course" id="8">HTML & CSS</div>
+                <div class="course" id="9">PHP Developer</div>
+            </div>
+            <div class="description">
+                <div class="course-description selected" id="0">
+                    <div class="content">
+                        <h2 class="center title">Programming Basics - July 2017</h2>
+                        <p>July 2017. By that time I had already played with code for a year. I started in April 2016 by
+                            watching HTML and CSS tutorials because I thought website building could be fun.
+                            A few months later I realised that HTML and CSS alone won't cut it and I got into PHP.
+                            At this point, it was starting to get interesting. I started understanding the code I wrote.
+                            I decided I want to work as a developer, I already knew where I could make that a reality.
+                            That was Software University, the most trusted software learning institution in my home
+                            country - Bulgaria.
+                            And here we go, I started my Programming Basics course with C#.
+                        </p>
+                    </div>
+
+                    <div class="achivement">
+                        <img src="img/pb2017.jpg" alt="Programming Basics Certificate" class="certificate">
+                    </div>
+                </div>
+
+                <div class="course-description" id="1">
+                    <div class="content">
+                        <h2 class="center title">Programming Fundamentals - September 2017</h2>
+                        <p>
+                        </p>
+                    </div>
+
+                    <div class="achivement">
+                        <img src="img/pf2017.jpg" alt="Programming Fundamentals Certificate" class="certificate">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="projects" id="projects">
+            <div class="project">
+                <img class="project-img" src="img/cpanel.png" alt="News5 Screenshot">
+                <div class="project-title">News5</div>
+                <div class="highlights">
+                    <span class="highlight">HTML</span>
+                    <span class="highlight">CSS</span>
+                    <span class="highlight">PHP</span>
+                    <span class="highlight">JS</span>
+                    <span class="highlight">jQuery</span>
+                    <span class="highlight">Symfony</span>
+                    <span class="highlight">Twig</span>
+                </div>
+                <div class="controls"></div>
+            </div>
+
+            <div class="project">
+                <img class="project-img" src="img/cpanel.png" alt="News5 Screenshot">
+                <div class="project-title">This Portfolio</div>
+                <div class="highlights">
+                    <span class="highlight">HTML</span>
+                    <span class="highlight">CSS</span>
+                    <span class="highlight">JS</span>
+                    <span class="highlight">jQuery</span>
+                </div>
+                <div class="controls"></div>
+            </div>
+        </section>
+
+        <section class="contacts" id="contacts">
+            <h2 class="title">CONTACT ME</h2>
+            <div class="links">
+                <a class="medialink" href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a class="medialink" href="#"><i class="fab fa-github"></i></a>
+                <a class="medialink" href="mailto:pavelstoyanovdev@gmail.com"><i class="fas fa-envelope"></i></a>
+            </div>
+            <form action="" class="contact">
+                <div class="row row-1">
+                    <input type="text" class="name" placeholder="Name" required>
+                    <input type="text" class="company" placeholder="Company (optional)">
+                </div>
+                <div class="row row-2">
+                    <input type="text" class="email" placeholder="Email" required>
+                </div>
+
+                <div class="row row-3">
+                    <textarea name="message" cols="30" rows="10" class="message" placeholder="Message"></textarea>
+                </div>
+
+                <div class="row">
+                    <input class="submit" type="submit" value="Submit">
+                </div>
+            </form>
+        </section>
+        <footer>
+            Handcrafted by me. &copy; <script>document.write(new Date().getFullYear())</script>
+        </footer>
+        <div class="unfinished">not finished</div>
+    </div>
+</body>
+
+</html>
